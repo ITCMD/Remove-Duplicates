@@ -71,7 +71,7 @@ exit /b
 :help
 set _FN=%~n0
 echo %_FN%| find " ">nul
-if %errorlevel%==1 set _FN="%~n0"
+if %errorlevel%==0 set _FN="%~n0"
 echo Deletes duplicate Files except the latest edited.
 echo.
 echo %_FN%  "Directory" "Filename" /F /C Character
