@@ -74,5 +74,18 @@ echo %_FN%| find " ">nul
 if %errorlevel%==1 set _FN="%~n0"
 echo Deletes duplicate Files except the latest edited.
 echo.
-echo %_FN%  "Directory" "Filename" /F /C Char
-	
+echo %_FN%  "Directory" "Filename" /F /C Character
+echo.
+echo Directory:      Directory to search for duplicate names. Use %cd% for current dir.
+echo Filename:       Duplicated Filename to search for
+echo /F              Do not prompt removal
+echo /C              Provide your own system character: The default character it uses to seperate files is ~. You don't need to know what this means, but if you have the ~ character in your filename then supply your own.
+echo Character:      The Character you want to use instead of ~
+echo.
+echo Example:
+echo   %_FN% "%cd%" "Picture.png"
+echo.
+echo This example will surch all subdirectories in your current folder for a file called "Picture.png" and will delete all copies except for the most recently modified one.
+echo.
+echo Created by Lucas Elliott   www.itcommand.tech
+exit /b
