@@ -1,4 +1,5 @@
 @echo off
+if "%~1"=="" goto help
 if "%~1"=="/?" goto help
 set ran=%random%%random%%random%
 set char=~
