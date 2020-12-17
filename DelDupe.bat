@@ -88,5 +88,5 @@ echo   %_FN% "%cd%" "Picture.png"
 echo.
 echo This example will surch all subdirectories in your current folder for a file called "Picture.png" and will delete all copies except for the most recently modified one.
 echo.
-echo Created by Lucas Elliott   www.itcommand.tech
+echo Created by Lucas Elliott   www.itcommand.net
 exit /b
